@@ -1,9 +1,9 @@
-const scoreBoard = {
+let scoreBoard = {
     "The Best Ever":1000000, 
 }
 
-newPlayerName = "Rob";
-newPlayerScore = 99999;
+let newPlayerName = "Rob";
+let newPlayerScore = 99999;
 scoreBoard[newPlayerName] = newPlayerScore;
 console.log(scoreBoard);
 
@@ -17,11 +17,15 @@ let scoreToAdd = 900000;
 scoreBoard[playerNameToUpdate] += scoreToAdd;
 console.log(scoreBoard);
 
-mondayBonus = 100;
 
-for (const key in scoreBoard) {
+let mondayBonus = 100;
+for(let player in scoreBoard){
+    scoreBoard[player] += mondayBonus
+}
+console.log(scoreBoard)
+/*for (const key in scoreBoard) {
     if (!Object.hasOwn(scoreBoard, key)) continue;
     
     scoreBoard[key] += mondayBonus;
 }
-console.log(scoreBoard)
+console.log(scoreBoard)*/
