@@ -1,7 +1,7 @@
-let knightIsAwake = false;
-let archerIsAwake = true;
+let knightIsAwake = true;
+let archerIsAwake = false;
 let prisonerIsAwake = true;
-let petDogIsPresent = false;
+let petDogIsPresent = true;
 
 
 let canExecuteFastAttack = !knightIsAwake;
